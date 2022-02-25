@@ -1,6 +1,6 @@
 public class NBody{
-    static int N;//the number of planets.
-    static double R;//the radius of the universe
+    private static int N;//the number of planets.
+    private static double R;//the radius of the universe
 
     // Given a file name as a String, it should return a double corresponding to the radius of the universe in that file
     public static double readRadius(String file){

@@ -23,8 +23,8 @@ public  class Planet{
         this.imgFileName=b.imgFileName;
     }
     
-    public double xxDis;//The distance between Planeta and Planetb in x
-    public double yyDis;//The distance between Planeta and Planetb in y
+    private double xxDis;//The distance between Planeta and Planetb in x
+    private double yyDis;//The distance between Planeta and Planetb in y
     
     public double calcDistance(Planet b){
         xxDis=b.xxPos-this.xxPos;
@@ -32,7 +32,7 @@ public  class Planet{
         return Math.sqrt(Math.pow(xxDis,2)+Math.pow(yyDis,2));
     }
     
-    public static double G=6.67e-11;
+    private static double G=6.67e-11;
     public double calcForceExertedBy(Planet b){
         return G*this.mass*b.mass/Math.pow(this.calcDistance(b),2);
     }
