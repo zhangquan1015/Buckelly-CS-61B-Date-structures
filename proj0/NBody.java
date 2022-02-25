@@ -10,12 +10,12 @@ public class NBody{
         return R;
     }
 
-    //  Given a file name, it should return an array of Bodys corresponding to the bodies in the file
-    public static Body[] readBodies(String file){
+    //  Given a file name, it should return an array of Planets corresponding to the bodies in the file
+    public static Planet[] readPlanets(String file){
         In in=new In(file);
         N=in.readInt();
         in.readDouble();
-        Body[] b1=new Body[N];
+        Planet[] b1=new Planet[N];
         for(int i=0;i<N;i++){
             double xP=in.readDouble();
             double yP=in.readDouble();
@@ -23,8 +23,8 @@ public class NBody{
             double yV=in.readDouble();
             double m=in.readDouble();
             String img=in.readString();
-            Body b2=new Body(xP,yP,xV,yV,m,img);
-            b1[i]=new Body(b2);
+            Planet b2=new Planet(xP,yP,xV,yV,m,img);
+            b1[i]=new Planet(b2);
         }
         return b1;
     }
@@ -36,7 +36,7 @@ public class NBody{
         String path="images/starfield.jpg";
         String filename=args[2];
         R=NBody.readRadius(filename);
-        Body[] b=NBody.readBodies(filename);
+        Planet[] b=NBody.readPlanets(filename);
         
         //Creating an Animation
         for(double t=0;t<T;t++){
@@ -57,7 +57,7 @@ public class NBody{
             StdDraw.enableDoubleBuffering();
             StdDraw.setScale(-R,R);
             StdDraw.picture(0,0,path);
-            //Drawing More than One Body
+            //Drawing More than One Planet
             for(int i=0;i<N;i++){
                 b[i].draw();
             }
