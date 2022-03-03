@@ -1,6 +1,3 @@
-import java.sql.PseudoColumnUsage;
-import java.util.LinkedList;
-
 public class LinkedListDeque<T>{
 
     public class IntNode {
