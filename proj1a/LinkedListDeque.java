@@ -79,7 +79,7 @@ public class LinkedListDeque<T>{
       */
     public T get(int index){
         IntNode temp;
-        if(index>size) return null;
+        if(index>=size) return null;
         else if(index<size/2){
             temp=new IntNode(sentFront,sentFront.next.item, sentFront.next.next);
             for (int i=0;i<index;i++){
