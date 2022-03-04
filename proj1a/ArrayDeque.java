@@ -8,13 +8,13 @@ public class ArrayDeque<T> {
     }
 
     /**Change the length of items*/
-    private void resizeFirst(int Factor) {
-        T[] a = (T []) new Object[Factor];
+    private void resizeFirst(int factor) {
+        T[] a = (T []) new Object[factor];
         System.arraycopy(items,0,a,1,size);
         items=a;
     }
-    private void resizeLast(int Factor) {
-        T[] a=(T[]) new Object[Factor];
+    private void resizeLast(int factor) {
+        T[] a=(T[]) new Object[factor];
         System.arraycopy(items,0,a,0,size);
         items=a;
     }
@@ -59,8 +59,8 @@ public class ArrayDeque<T> {
         }
         System.out.println(items[size-1]);
     }
-    private void resizeFirst2(int Factor){
-        T[] a=(T[])new Object[Factor];
+    private void resizeFirst2(int factor){
+        T[] a=(T[])new Object[factor];
         System.arraycopy(items,1,a,0,size-1);
         items=a;
     }

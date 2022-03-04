@@ -110,7 +110,8 @@ public class LinkedListDeque<T> {
         sentBack=new IntNode(sentFront,null,null);
         sentFront.next=sentBack;
     }
-    /**Creates a deep copy of other*/
+    /**
+    //Creates a deep copy of other*
     public LinkedListDeque(LinkedListDeque other) {
         size=0;
         sentFront=new IntNode(null,null,null);
@@ -121,7 +122,7 @@ public class LinkedListDeque<T> {
             addLast((T)other.get(i));
         }
     }
-
+    */
     /**Same as get, but uses recursion.*/
     public T getRecursive(int index) {
         if (index >=size) {
