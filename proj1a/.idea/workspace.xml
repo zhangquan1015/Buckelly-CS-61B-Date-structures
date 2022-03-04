@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c2e3324-64f4-4e2c-a251-18f06ec23916" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ArrayDeque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj0/Body.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj0/In.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj0/In.java" beforeDir="false" />
@@ -117,8 +116,15 @@
       <change beforePath="$PROJECT_DIR$/../proj0/images/sun.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj0/images/uranus.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj0/images/venus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayDeque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinkedListDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDeque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinkedListDequeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDequeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj1a/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj1a/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj1a/ArrayDeque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj1a/ArrayDeque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj1a/LinkedListDeque$IntNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj1a/LinkedListDeque$IntNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj1a/LinkedListDeque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj1a/LinkedListDeque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj1a/LinkedListDequeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj1a/LinkedListDequeTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +141,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -147,7 +161,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lectureCode-sp17/lists4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="LinkedListDequeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -173,5 +187,30 @@
       <updated>1646298697474</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/LinkedListDequeTest.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/LinkedListDequeTest.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/LinkedListDequeTest.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

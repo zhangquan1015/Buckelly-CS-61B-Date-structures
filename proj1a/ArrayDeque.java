@@ -1,39 +1,36 @@
-public class ArrayDeque<T>{
-    int size;
-    T[] items;
+public class ArrayDeque<T> {
+    private int size;
+    private T [] items;
     /** Creates an empty array deque. */
     public ArrayDeque() {
-        size=0;
-        items=(T[])new Object[8];
+        size = 0;
+        items = (T []) new Object[8];
     }
-    /**Creates a deep copy of other. */
-    public ArrayDeque(ArrayDeque other){
 
-    }
     /**Change the length of items*/
-    private void resizeFirst(int Factor){
-        T[] a=(T[]) new Object[Factor];
+    private void resizeFirst(int Factor) {
+        T[] a = (T []) new Object[Factor];
         System.arraycopy(items,0,a,1,size);
         items=a;
     }
-    private void resizeLast(int Factor){
+    private void resizeLast(int Factor) {
         T[] a=(T[]) new Object[Factor];
         System.arraycopy(items,0,a,0,size);
         items=a;
     }
     /**Adds an item of type T to the front of the deque*/
-    public void addFirst(T item){
+    public void addFirst(T item) {
         if(size==items.length){
             resizeFirst(size*2);
         }
         else
-            resizeFirst(size);
+            resizeFirst(items.length);
         items[0]=item;
         size++;
     }
 
     /**Adds an item of type T to the back of the deque.*/
-    public void addLast(T item){
+    public void addLast(T item) {
         if(size==items.length){
             resizeLast(size*2);
         }
@@ -42,8 +39,10 @@ public class ArrayDeque<T>{
     }
     /**Returns true if deque is emp  ty, false otherwise*/
     public boolean isEmpty(){
-        if(size==0) return true;
-        else return false;
+        if(size==0)
+            return true;
+        else
+            return false;
     }
     /**Returns the number of items in the deque*/
     public int size(){
@@ -56,13 +55,14 @@ public class ArrayDeque<T>{
      */
     public void printDeque(){
         for (int i=0;i<size-1;i++){
-            System.out.print(items[i]);
+            System.out.print(items[i]+" ");
         }
         System.out.println(items[size-1]);
     }
     private void resizeFirst2(int Factor){
         T[] a=(T[])new Object[Factor];
         System.arraycopy(items,1,a,0,size-1);
+        items=a;
     }
     /**Removes and returns the item at the front of the deque. If no such item exists, returns null.*/
     public T removeFirst(){
@@ -72,7 +72,12 @@ public class ArrayDeque<T>{
         }
         else{
             temp=items[0];
-            resizeFirst2(size*2);
+            if(size<4)
+                resizeFirst2(8);
+            else if(size<items.length/4&&items.length>=16)
+                resizeFirst2(size*2);
+            else
+                resizeFirst2(items.length);
         }
         size--;
         return temp;

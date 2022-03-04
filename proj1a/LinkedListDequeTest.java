@@ -1,5 +1,5 @@
 /** Performs some basic linked list tests. */
-public class LinkedListDequeTest {
+public class LinkedListDequeTest<T> {
 	
 	/* Utility method for printing out empty checks. */
 	public static boolean checkEmpty(boolean expected, boolean actual) {
@@ -61,6 +61,7 @@ public class LinkedListDequeTest {
 
 	}
 
+
 	/** Adds an item, then removes an item, and ensures that dll is empty afterwards. */
 	public static void addRemoveTest() {
 
@@ -75,7 +76,8 @@ public class LinkedListDequeTest {
 		lld1.addFirst(10);
 		// should not be empty 
 		passed = checkEmpty(false, lld1.isEmpty()) && passed;
-
+		lld1.removeFirst();
+		lld1.addLast(2);
 		lld1.removeFirst();
 		// should be empty 
 		passed = checkEmpty(true, lld1.isEmpty()) && passed;
@@ -84,9 +86,64 @@ public class LinkedListDequeTest {
 
 	}
 
+	public static boolean checkFirst(int expected, int actual) {
+		if (expected != actual) {
+			System.out.println("isEmpty() returned " + actual + ", but expected: " + expected);
+			return false;
+		}
+		return true;
+	}
+	public static void addIsFirstTest() {
+
+		//System.out.println("Running add/remove test.");
+
+		//System.out.println("Make sure to uncomment the lines below (and delete this print statement).");
+
+		LinkedListDeque<Integer> lld1 = new LinkedListDeque<Integer>();
+		// should be empty
+		boolean passed = checkEmpty(true, lld1.isEmpty());
+
+		lld1.addFirst(0);
+		// should not be empty
+		passed = checkFirst(10, lld1.get(1)) && passed;
+
+		lld1.addFirst(1);
+		// should be empty
+		passed = checkEmpty(false, lld1.isEmpty()) && passed;
+		lld1.removeLast();
+		lld1.removeLast();
+		passed = checkEmpty(true, lld1.isEmpty()) && passed;
+
+		printTestStatus(passed);
+
+	}
+	public static void test() {
+		//LinkedListDeque<Integer> lld1 = new LinkedListDeque<Integer>();
+		ArrayDeque<Integer> lld1= new ArrayDeque<Integer>();
+		for (int i=0;i<10;i++){
+			lld1.addFirst(i);
+		}
+		for (int i=0;i<10;i++){
+			lld1.addLast(i);
+		}
+		lld1.removeFirst();
+		lld1.removeFirst();
+		lld1.removeFirst();
+		lld1.removeLast();
+		lld1.removeLast();
+		lld1.removeLast();
+		lld1.removeLast();
+		int[] a=new int[lld1.size()];
+		for (int i=0;i< lld1.size();i++) {
+		}
+
+	}
 	public static void main(String[] args) {
 		System.out.println("Running tests.\n");
-		addIsEmptySizeTest();
-		addRemoveTest();
+		//addIsEmptySizeTest();
+		//addIsFirstTest();
+		//addRemoveTest();
+
+		test();
 	}
 } 
