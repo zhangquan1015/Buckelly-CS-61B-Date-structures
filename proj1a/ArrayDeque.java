@@ -84,9 +84,18 @@ public class ArrayDeque<T> {
             System.out.println(items[nextLast-1]);
     }
 
+        private  void reSize2(int factor) {
+            T [] a = (T[]) new Object[factor];
+            System.arraycopy(items,nextFirst,a,0,nextLast-nextFirst);
+            nextFirst = 0;
+            nextLast = size+1;
+            items = a;
+        }
     /**Removes and returns the item at the front of the deque. If no such item exists, returns null.*/
     public T removeFirst() {
         T temp;
+        if (items.length >= 16 && size < items.length/4)
+            reSize2(size*2);
         if (size == 0)
             return null;
         else {
@@ -107,6 +116,8 @@ public class ArrayDeque<T> {
 
     /**Removes and returns the item at the back of the deque. If no such item exists, returns null.*/
     public T removeLast() {
+        if (items.length >= 16 && size < items.length/4)
+            reSize2(items.length/2);
         T temp;
         if (size == 0)
             return null;

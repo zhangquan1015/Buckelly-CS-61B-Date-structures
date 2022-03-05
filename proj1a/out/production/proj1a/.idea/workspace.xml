@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c2e3324-64f4-4e2c-a251-18f06ec23916" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayDeque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDeque.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ArrayDequeTest">
+    <configuration name="ArrayDequeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayDequeTest" />
+      <module name="proj1a" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedListDequeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinkedListDequeTest" />
       <module name="proj1a" />
@@ -53,6 +58,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayDequeTest" />
         <item itemvalue="Application.LinkedListDequeTest" />
       </list>
     </recent_temporary>
@@ -87,19 +93,14 @@
           <option name="timeStamp" value="2" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedListDequeTest.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/ArrayDequeTest.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedListDequeTest.java</url>
-          <line>125</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/LinkedListDequeTest.java</url>
-          <line>136</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/ArrayDequeTest.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

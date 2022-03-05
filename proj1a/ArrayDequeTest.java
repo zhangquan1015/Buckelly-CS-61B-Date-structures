@@ -116,29 +116,27 @@ public class ArrayDequeTest {
     public static void test() {
         //LinkedListDeque<Integer> lld1 = new LinkedListDeque<Integer>();
         ArrayDeque<Integer> lld1= new ArrayDeque<Integer>();
+        for (int i=0;i<30;i++){
+            lld1.addFirst(2*i);
+        }
         lld1.addLast(0);
         lld1.addLast(1);
         lld1.addFirst(2);
         lld1.addLast(3);
         lld1.addLast(4);
         lld1.addLast(5);
+        for (int i=0;i<30;i++) {
+            lld1.removeFirst();
+        }
 
-        lld1.removeFirst();
-        lld1.removeFirst();
-        lld1.get(3);
-        lld1.removeLast();
-        lld1.addFirst(10);
-        lld1.addLast(11);
-        lld1.addLast(12);
-        lld1.addLast(13);
-        lld1.get(1);
-        lld1.addFirst(15);
-        lld1.addFirst(16);
-        lld1.removeFirst();
-        lld1.addFirst(18);
-        lld1.removeFirst();
-        lld1.removeLast();
-
+        lld1.addLast(0);
+        lld1.addLast(1);
+        lld1.addFirst(2);
+        lld1.addLast(3);
+        lld1.addLast(0);
+        lld1.addLast(1);
+        lld1.addFirst(2);
+        lld1.addLast(3);
 
 
 
