@@ -16,7 +16,7 @@ public class ArrayDeque<T> {
         if(nextFirst == 0) {
             System.arraycopy(items,nextFirst,a,0,size);
             items = a;
-            nextLast = size+1;
+            nextLast = size;
         }
         else if(nextLast == items.length-1){
             System.arraycopy(items,0,a,0,size);
@@ -137,7 +137,7 @@ public class ArrayDeque<T> {
             if(nextFirst+index < items.length-1)
                 return items[nextFirst+1+index];
             else
-                return items[nextFirst+1+index- items.length];
+                return items[nextFirst+1+index-items.length];
        }
     }
 
