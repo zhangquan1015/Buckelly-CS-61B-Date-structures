@@ -2,129 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c2e3324-64f4-4e2c-a251-18f06ec23916" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../proj0/Body.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/In.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/In.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/NBody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/NBody.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/Planet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/Planet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/StdAudio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/StdDraw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/StdDraw.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/StdOut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/StdOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestBodyConstructor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestBodyConstructor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestCalcDistance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestCalcDistance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestCalcForceExertedBy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestCalcForceExertedBy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestCalcForceExertedByXY.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestCalcForceExertedByXY.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestCalcNetForceExertedByXY.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestCalcNetForceExertedByXY.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestPlanetConstructor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestPlanetConstructor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestReadBodies.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestReadBodies.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestReadPlanets.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestReadRadius.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestReadRadius.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestUpdate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/TestUpdate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/audio/2001.mid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/3body.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/8star-rotation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/antimatter.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/armageddon.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/atom.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/awesome.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/binary.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/binaryStars.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/bowling.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/chaosblossom.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/dance10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/entropy-universe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/fourellipses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/galaxy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/hypnosis.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/illusion.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/its-a-trap.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/kaleidoscope.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/kevin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/massive-squirrel-battle.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/planets-elliptical.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/planets.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/planetsparty.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/pluto.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/quad-stars.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/renegade.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/sbh2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/sbh3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/soap-opera.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/spiral.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/suninterference.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/twin-binaries.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/uniform100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/uniform3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/data/uniform8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/BasicInDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/BasicInDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/BasicInDemo_input_file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/In.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/In.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/InDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/InDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdDraw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdDraw.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdDrawDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdDrawDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdOut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdRandom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdRandom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/advice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/examples/national_salt_production.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/acorn-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/acorn3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/asteroid.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/ball.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/blackhole.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/death_star.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/earth.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/electron.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/endor.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/goodbye.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/imback.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/its_a_trap.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/jupiter.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/kevin.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/mars.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/mercury.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/neptune.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/ninjasquirrel_red.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/nucleus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/pin.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/pluto.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/rebel_cruiser.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/saturn.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/squirrel.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/star.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/star_destroyer.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/starfield.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/sun.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/uranus.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/images/venus.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayDeque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinkedListDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDeque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListDequeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDequeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proj1a/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj1a/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proj1a/ArrayDeque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj1a/ArrayDeque.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proj1a/LinkedListDeque$IntNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj1a/LinkedListDeque$IntNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proj1a/LinkedListDeque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj1a/LinkedListDeque.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proj1a/LinkedListDequeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj1a/LinkedListDequeTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +20,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -180,6 +68,17 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -189,8 +88,18 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/LinkedListDequeTest.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="16" />
+          <line>146</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/LinkedListDequeTest.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/LinkedListDequeTest.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

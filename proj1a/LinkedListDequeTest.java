@@ -120,22 +120,21 @@ public class LinkedListDequeTest<T> {
 	public static void test() {
 		//LinkedListDeque<Integer> lld1 = new LinkedListDeque<Integer>();
 		ArrayDeque<Integer> lld1= new ArrayDeque<Integer>();
-		for (int i=0;i<10;i++){
+		for (int i=-2;i<8;i++){
 			lld1.addFirst(i);
 		}
-		for (int i=0;i<10;i++){
+		for (int i=3;i<19;i++){
 			lld1.addLast(i);
 		}
+		lld1.printDeque();
 		lld1.removeFirst();
 		lld1.removeFirst();
 		lld1.removeFirst();
+		lld1.printDeque();
 		lld1.removeLast();
-		lld1.removeLast();
-		lld1.removeLast();
-		lld1.removeLast();
-		int[] a=new int[lld1.size()];
-		for (int i=0;i< lld1.size();i++) {
-		}
+		lld1.printDeque();
+
+
 
 	}
 	public static void main(String[] args) {

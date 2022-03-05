@@ -111,7 +111,9 @@ public class LinkedListDeque<T> {
         sentFront.next=sentBack;
     }
     /**
-    //Creates a deep copy of other*
+     * @Source https://www.youtube.com/watch?v=JNroRiEG7U4
+     * Creates a deep copy of other
+     * /
     public LinkedListDeque(LinkedListDeque other) {
         size=0;
         sentFront=new IntNode(null,null,null);
@@ -123,19 +125,22 @@ public class LinkedListDeque<T> {
         }
     }
     */
-    /**Same as get, but uses recursion.*/
+    /**
+     * @Source https://blog.csdn.net/qq_46497008/article/details/106437475
+     * Same as get, but uses recursion.
+     */
     public T getRecursive(int index) {
         if (index >=size) {
             return null;
         }
         else
-            return getRecursive(0,index,sentFront.next);
+            return getRecursive(sentFront.next,index);
     }
-    private T getRecursive(int pos,int index,IntNode x) {
-        if(pos==index){
+    private T getRecursive(IntNode x,int index) {
+        if(index==0){
             return x.item;
         }
         else
-            return getRecursive(pos+1,index,x.next);
+            return getRecursive(x.next,index-1);
     }
 }
