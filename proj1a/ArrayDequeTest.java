@@ -132,11 +132,14 @@ public class ArrayDequeTest {
         lld1.addLast(0);
         lld1.addLast(1);
         lld1.addFirst(2);
-        lld1.addLast(3);
-        lld1.addLast(0);
-        lld1.addLast(1);
-        lld1.addFirst(2);
-        lld1.addLast(3);
+
+        for(int i=3;i<40;i++){
+            lld1.addLast(i*3);
+        }
+        int [] a=new int[20];
+        for (int i=0;i<20;i++){
+            a[i]=lld1.get(i);
+        }
 
 
 
