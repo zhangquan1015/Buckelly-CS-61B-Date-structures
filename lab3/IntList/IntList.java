@@ -136,7 +136,7 @@ public class IntList {
             return null;
         else{
             int size = size(A);
-            int [] temp = new int [size];
+            int [] temp;
             temp = IntList.intListToArray(A);
             int i;
             IntList ptr;
@@ -287,7 +287,8 @@ public class IntList {
 
     @Override
     /** Outputs the IntList as a String. You are not expected to read
-     * or understand this method. */
+     * or understand this method.
+     * */
     public String toString() {
         Formatter out = new Formatter();
         String sep;
