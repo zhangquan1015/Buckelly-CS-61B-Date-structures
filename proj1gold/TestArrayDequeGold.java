@@ -14,25 +14,25 @@ public class TestArrayDequeGold {
             double numberBetweenZeroAndOne = StdRandom.uniform();
             int numberInDeque = StdRandom.uniform(9);
             if (numberBetweenZeroAndOne <= 0.3) {
-                studentDeque.addLast(numberInDeque);
-                solutionDeque.addLast(numberInDeque);
-                message.append("addLast("+numberInDeque+")\n");
-            }
-            else if (numberBetweenZeroAndOne <= 0.6) {
                 studentDeque.addFirst(numberInDeque);
                 solutionDeque.addFirst(numberInDeque);
-                message.append("addFirst("+numberInDeque+")\n");
+                message.append("addFirst(" + numberInDeque + ")\n");
+            }
+            else if (numberBetweenZeroAndOne <= 0.6) {
+                studentDeque.addLast(numberInDeque);
+                solutionDeque.addLast(numberInDeque);
+                message.append("addLast(" + numberInDeque + ")\n");
             }
             else if (numberBetweenZeroAndOne < 0.8 && solutionDeque.size() != 0) {
                 Integer expected = solutionDeque.removeFirst();
                 Integer actual = studentDeque.removeFirst();
-                message.append("removeLast()\n");
+                message.append("removeFirst()\n");
                 assertEquals(message.toString(), expected, actual);
             }
             else if(solutionDeque.size() != 0) {
                 Integer expected = solutionDeque.removeLast();
                 Integer actual = studentDeque.removeLast();
-                message.append("removeFirst()\n");
+                message.append("removeLast()\n");
                 assertEquals(message.toString(), expected, actual);
             }
         }
