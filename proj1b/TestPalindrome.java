@@ -28,7 +28,7 @@ public class TestPalindrome {
         }
 
         OffByOne obo = new OffByOne();
-        String [] testTure2 = {"ab","ba","arb","falbe"};
+        String [] testTure2 = {"ab","ba","AcB","arb","falbe","flake","*"};
         String [] testFalse2 = {"asdw","hores","Aa","aaaab"};
         for (String s1 : testTure2) {
             assertTrue(palindrome.isPalindrome(s1,obo));
