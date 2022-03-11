@@ -1,41 +1,41 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
-
 public class TestArrayDequeGold {
+
     @Test
-    public void randomTest() {
-        ArrayDequeSolution<Integer> expected = new ArrayDequeSolution<>();
-        StudentArrayDeque<Integer> actual = new StudentArrayDeque<>();
+    public void testDeque(){
+
+        StudentArrayDeque<Integer> studentDeque = new StudentArrayDeque<>();
+        ArrayDequeSolution<Integer> solutionDeque = new ArrayDequeSolution<>();
         StringBuilder message = new StringBuilder();
         message.append("\n");
-
-        while (true) {
-            int i = StdRandom.uniform(9);
+        while(true) {
             double numberBetweenZeroAndOne = StdRandom.uniform();
-            if (numberBetweenZeroAndOne <= 0.3) {
-                actual.addLast(i);
-                expected.addLast(i);
-                message.append("addLast(" + i + ")\n");
+            int numberInDeque = StdRandom.uniform(1,10);
+            if (numberBetweenZeroAndOne <= 0.2) {
+                studentDeque.addLast(numberInDeque);
+                solutionDeque.addLast(numberInDeque);
+                message.append("addLast("+numberInDeque+")\n");
             }
-            else if (numberBetweenZeroAndOne <= 0.6){
-                actual.addFirst(i);
-                expected.addFirst(i);
-                message.append("addFirst(" + i + ")\n");
+            else if(numberBetweenZeroAndOne <= 0.5) {
+                studentDeque.addFirst(numberInDeque);
+                solutionDeque.addFirst(numberInDeque);
+                message.append("addFirst("+numberInDeque+")\n");
             }
-            else if (numberBetweenZeroAndOne < 0.8 && expected.size() != 0) {
-                Integer a = expected.removeFirst();
-                Integer b = actual.removeFirst();
-                message.append("removeFirst()\n");
-                assertEquals(message.toString(), a, b);
-            }
-            else if (expected.size() != 0) {
-                Integer a = expected.removeLast();
-                Integer b = actual.removeLast();
+            else if(numberBetweenZeroAndOne <= 0.7 && !studentDeque.isEmpty()) {
+                Integer actual = studentDeque.removeFirst();
+                Integer expected = solutionDeque.removeFirst();
                 message.append("removeLast()\n");
-                assertEquals(message.toString(), a, b);
+                assertEquals(message.toString(), expected, actual);
             }
+            else if(!studentDeque.isEmpty()) {
+                Integer actual = studentDeque.removeLast();
+                Integer expected = solutionDeque.removeLast();
+                message.append("removeFirst()\n");
+                assertEquals(message.toString(), expected, actual);
             }
         }
+
+
     }
-
-
+}
