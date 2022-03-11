@@ -11,7 +11,7 @@ public class Palindrome {
         return deque;
     }
     /**
-     * Do not use recursion
+     * //Do not use recursion
     public boolean isPalindrome(String word) {
         int len = word.length();
         Deque<Character> deque = new ArrayDeque<>();
@@ -29,16 +29,29 @@ public class Palindrome {
 
     /**use recursion*/
     public boolean isPalindrome(String word) {
-        Deque<Character> deque = new LinkedListDeque<>();
-        deque = wordToDeque(word);
-        return isPalindrome(deque);
+        Deque<Character> deque = wordToDeque(word);
+        return isPalindromeRecursion(deque);
     }
-    private boolean isPalindrome(Deque<Character> deque) {
+    private boolean isPalindromeRecursion(Deque<Character> deque) {
         if (deque.size() <= 1)
             return true;
         else if(deque.removeFirst() != deque.removeLast())
             return false;
         else
-            return isPalindrome(deque);
+            return isPalindromeRecursion(deque);
+    }
+
+    public boolean isPalindrome(String word, CharacterComparator cc) {
+        Deque<Character> deque = wordToDeque(word);
+        return isPalindromeRecursion2(deque,cc);
+    }
+
+    private boolean isPalindromeRecursion2(Deque<Character> deque,CharacterComparator cc) {
+        if (deque.size() <= 1)
+            return true;
+        else if(!cc.equalChars(deque.removeFirst(),deque.removeLast()))
+            return false;
+        else
+            return isPalindromeRecursion2(deque,cc);
     }
 }

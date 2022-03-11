@@ -26,5 +26,15 @@ public class TestPalindrome {
         for (String s2 : testFalse) {
             assertFalse(palindrome.isPalindrome(s2));
         }
+
+        OffByOne obo = new OffByOne();
+        String [] testTure2 = {"ab","ba","arb","falbe"};
+        String [] testFalse2 = {"asdw","hores","Aa","aaaab"};
+        for (String s1 : testTure2) {
+            assertTrue(palindrome.isPalindrome(s1,obo));
+        }
+        for (String s2 : testFalse2) {
+            assertFalse(palindrome.isPalindrome(s2,obo));
+        }
     }
 }
