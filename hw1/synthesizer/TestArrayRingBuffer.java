@@ -17,7 +17,7 @@ public class TestArrayRingBuffer {
         assertTrue(arb.isEmpty());
         assertFalse(arb.isFull());
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 12; i++) {
             arb.enqueue(i);
         }
         assertEquals(0,arb.peek());
