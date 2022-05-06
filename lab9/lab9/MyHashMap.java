@@ -1,13 +1,14 @@
 package lab9;
 
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
 /**
- *  A hash table-backed Map implementation. Provides amortized constant time
- *  access to elements via get(), remove(), and put() in the best case.
+ * A hash table-backed Map implementation. Provides amortized constant time
+ * access to elements via get(), remove(), and put() in the best case.
  *
- *  @author Your name here
+ * @author Your name here
  */
 public class MyHashMap<K, V> implements Map61B<K, V> {
 
@@ -16,6 +17,7 @@ public class MyHashMap<K, V> implements Map61B<K, V> {
 
     private ArrayMap<K, V>[] buckets;
     private int size;
+    private Set<K> keys;
 
     private int loadFactor() {
         return size / buckets.length;
@@ -23,6 +25,7 @@ public class MyHashMap<K, V> implements Map61B<K, V> {
 
     public MyHashMap() {
         buckets = new ArrayMap[DEFAULT_SIZE];
+        keys = new HashSet<>();
         this.clear();
     }
 
@@ -30,14 +33,16 @@ public class MyHashMap<K, V> implements Map61B<K, V> {
     @Override
     public void clear() {
         this.size = 0;
+        keys.clear();
         for (int i = 0; i < this.buckets.length; i += 1) {
             this.buckets[i] = new ArrayMap<>();
         }
     }
 
-    /** Computes the hash function of the given key. Consists of
-     *  computing the hashcode, followed by modding by the number of buckets.
-     *  To handle negative numbers properly, uses floorMod instead of %.
+    /**
+     * Computes the hash function of the given key. Consists of
+     * computing the hashcode, followed by modding by the number of buckets.
+     * To handle negative numbers properly, uses floorMod instead of %.
      */
     private int hash(K key) {
         if (key == null) {
@@ -53,19 +58,34 @@ public class MyHashMap<K, V> implements Map61B<K, V> {
      */
     @Override
     public V get(K key) {
-        throw new UnsupportedOperationException();
+        int h = hash(key);
+        return getHelper(key, buckets[h]);
+    }
+
+    private V getHelper(K key, ArrayMap<K, V> am) {
+        if (!am.containsKey(key)) return null;
+        return am.get(key);
     }
 
     /* Associates the specified value with the specified key in this map. */
     @Override
     public void put(K key, V value) {
-        throw new UnsupportedOperationException();
+        int h = hash(key);
+        putHelper(key, value, buckets[h]);
+    }
+
+    private void putHelper(K key, V value, ArrayMap<K, V> am) {
+        if (!am.containsKey(key)) {
+            keys.add(key);
+            size++;
+        }
+        am.put(key, value);
     }
 
     /* Returns the number of key-value mappings in this map. */
     @Override
     public int size() {
-        throw new UnsupportedOperationException();
+        return size;
     }
 
     //////////////// EVERYTHING BELOW THIS LINE IS OPTIONAL ////////////////
@@ -73,7 +93,7 @@ public class MyHashMap<K, V> implements Map61B<K, V> {
     /* Returns a Set view of the keys contained in this map. */
     @Override
     public Set<K> keySet() {
-        throw new UnsupportedOperationException();
+        return keys;
     }
 
     /* Removes the mapping for the specified key from this map if exists.
